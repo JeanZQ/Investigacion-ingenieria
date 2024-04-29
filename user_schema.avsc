@@ -1,0 +1,11 @@
+{
+  "namespace": "example.avro",
+  "type": "record",
+  "name": "User",
+  "fields": [
+    {"name": "name", "type": "string"},
+    {"name": "addresses", "type": "string"},
+    {"name": "flooNetworkID", "type": "string"},
+    {"name": "mail", "type": "string"}
+  ]
+}
