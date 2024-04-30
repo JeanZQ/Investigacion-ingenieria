@@ -25,3 +25,20 @@ services:
       MYSQL_DATABASE: bank
     ports:
       - 3306:3306
+  prometheus:
+    image: prom/prometheus:v2.32.1
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000
+  kafka-exporter:
+    image: danielqsj/kafka-exporter:v1.2.0
+    ports:
+      - 9308:9308
+    command:
+      - '--kafka.server=kafka:29092'
+

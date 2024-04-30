@@ -1,0 +1,13 @@
+1. Reliability: 
+    Agregar redundancia, podriamos tener varios broker para tolerancia a fallos
+    Podemos agregar:
+        Prometheus o Grafana para supervisar el estado de los servicios y recibir alertas en caso de problemas
+
+2. Scalability: 
+    Se podrian agregar servicios como Kubernetes
+
+3. Data Consistency:
+    Apache Pulsar o Confluent Schema Registry
+
+4. Maintainability:
+    Jaeger o Zipkin
