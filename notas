@@ -11,3 +11,9 @@
 
 4. Maintainability:
     Jaeger o Zipkin
+
+
+
+instalar:
+pip install kafka-python
+pip install mysql-connector-python
